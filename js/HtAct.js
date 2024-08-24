@@ -1,4 +1,4 @@
-function HtAct (errors=true, errors_type="console", prefix="../components/", format=".HTA") {
+function HtAct(errors = true, errors_type = "console", prefix = "../components/", format = ".HTA") {
     const HtAct = document.querySelector("HtAct");
     const HtActValue = HtAct.textContent.trim().split(",");
 
@@ -16,17 +16,13 @@ function HtAct (errors=true, errors_type="console", prefix="../components/", for
 
     async function fetchFileContent(fileName) {
         try {
-            const response = await fetch(
-                 prefix +
-                fileName.substring(1, fileName.length - 1) +
-                format
-            );
+            const response = await fetch(prefix + fileName.substring(1, fileName.length - 1) + format);
             if (!response.ok) throw new Error('Network response was not ok');
             return await response.text();
         } catch (error) {
-            if (errors === true){
-            console.error('Error fetching file:', error);
-            return '';
+            if (errors === true) {
+                console.error('Error fetching file:', error);
+                return '';
             }
         }
     }
@@ -46,7 +42,8 @@ function HtAct (errors=true, errors_type="console", prefix="../components/", for
         document.body.innerHTML = bodyContent;
     }
 
-    replaceContent().then(r => {});
+    replaceContent().then(r => {
+    });
 }
 
-export { HtAct };
+export {HtAct};
