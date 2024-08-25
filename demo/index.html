@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+    <HtAct>
+        Header -> "Header",
+        Footer -> "footer/Footer"
+    </HtAct>
+</head>
+<body>
+@[Header]
+<h1>main</h1>
+@[Footer]
+
+<script type="module">
+    import {HtAct} from "./node_modules/htact/HtAct.js";
+
+    HtAct(true, "console", "../components/", ".HTA")
+</script>
+
+</body>
+</html>
