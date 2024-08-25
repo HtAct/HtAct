@@ -17,7 +17,6 @@ You can install HtAct using npm:
 npm install htact
 ```
 
-
 ## How to use:💻
 
 ```html
