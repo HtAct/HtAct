@@ -1,0 +1,24 @@
+{
+  "name": "htact",
+  "version": "1.0.0",
+  "description": "A great library to easily do html componentization and similar things",
+  "main": "HtAct.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HtAct/HtAct.git"
+  },
+  "keywords": [
+    "html",
+    "js",
+    "component",
+    "html component",
+    "js library",
+    "html library"
+  ],
+  "author": "mohamadreza nasralezade",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/HtAct/HtAct/issues"
+  },
+  "homepage": "https://github.com/HtAct/HtAct#readme"
+}

@@ -17,3 +17,59 @@ You can install HtAct using npm:
 npm install htact
 ```
 
+## How to use:💻
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index page</title>
+    <HtAct>
+        Header -> "Header",
+        Footer -> "footer/Footer"
+    </HtAct>
+</head>
+<body>
+@[Header]
+<h1>main</h1>
+@[Footer]
+
+<script type="module">
+    import {HtAct} from "./node_modules/htact/HtAct.js";
+
+    HtAct(true, "console", "../components/", ".HTA")
+</script>
+
+</body>
+</html>
+```
+
+### Import:
+
+```html
+    <HtAct>
+        Header -> "Header",
+        Footer -> "footer/Footer"
+    </HtAct>
+```
+
+### Use:
+
+```html
+    @[Header]
+<!--    other code-->
+    @[Footer]
+```
+
+
+
+### Start:
+
+```html
+<script type="module">
+    import {HtAct} from "./node_modules/htact/HtAct.js";
+
+    HtAct(true, "console", "../components/", ".HTA")
+</script>
+```

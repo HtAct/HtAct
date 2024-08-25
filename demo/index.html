@@ -3,10 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>index page</title>
-    <link rel="stylesheet" href="./css/style.css">
     <HtAct>
         Header -> "Header",
-        Footer -> "Footer"
+        Footer -> "footer/Footer"
     </HtAct>
 </head>
 <body>
@@ -14,9 +13,8 @@
 <h1>main</h1>
 @[Footer]
 
-
 <script type="module">
-    import {HtAct} from "./js/HtAct.js";
+    import {HtAct} from "./node_modules/htact/HtAct.js";
 
     HtAct(true, "console", "../components/", ".HTA")
 </script>
